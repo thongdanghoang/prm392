@@ -1,6 +1,6 @@
 CREATE TABLE restaurants.seats
 (
-    id           UUID         NOT NULL,
+    id           UUID,
     version      INTEGER      NOT NULL,
     name         VARCHAR(255) NOT NULL,
     floor_number SMALLINT,
@@ -13,7 +13,7 @@ ALTER TABLE restaurants.seats
 
 CREATE TABLE restaurants.reservations
 (
-    id                       UUID        NOT NULL,
+    id                       UUID,
     version                  INTEGER     NOT NULL,
     seat_id                  UUID        NOT NULL,
     user_id                  UUID        NOT NULL,
@@ -36,7 +36,7 @@ CREATE INDEX reservations_user_id_idx ON restaurants.reservations (user_id);
 
 CREATE TABLE restaurants.menu_items
 (
-    id          UUID         NOT NULL,
+    id          UUID,
     version     INTEGER      NOT NULL,
     name        VARCHAR(255) NOT NULL,
     description VARCHAR(255),
@@ -56,6 +56,6 @@ CREATE TABLE restaurants.reservation_menu_items
 ALTER TABLE restaurants.reservation_menu_items
     ADD CONSTRAINT reservation_menu_items_pk PRIMARY KEY (reservation_id, menu_item_id),
     ADD CONSTRAINT reservation_menu_items_reservation_id_fk FOREIGN KEY (reservation_id) REFERENCES restaurants.reservations (id),
-    ADD CONSTRAINT reservation_menu_items_menu_item_id_fk FOREIGN KEY (menu_item_id) REFERENCES menu_items (id);
+    ADD CONSTRAINT reservation_menu_items_menu_item_id_fk FOREIGN KEY (menu_item_id) REFERENCES restaurants.menu_items (id);
 CREATE INDEX reservation_menu_items_reservation_id_idx ON restaurants.reservation_menu_items (reservation_id);
 CREATE INDEX reservation_menu_items_menu_item_id_idx ON restaurants.reservation_menu_items (menu_item_id);

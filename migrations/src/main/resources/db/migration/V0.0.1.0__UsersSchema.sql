@@ -1,6 +1,6 @@
 CREATE TABLE users.users
 (
-    id                 UUID         NOT NULL,
+    id                 UUID,
     version            INTEGER      NOT NULL,
     username           VARCHAR(64)  NOT NULL,
     password           VARCHAR(255) NOT NULL,
@@ -22,7 +22,7 @@ ALTER TABLE users.users
 
 CREATE TABLE users.authorities
 (
-    id      UUID        NOT NULL,
+    id      UUID,
     version INTEGER     NOT NULL,
     role    VARCHAR(64) NOT NULL
 );
