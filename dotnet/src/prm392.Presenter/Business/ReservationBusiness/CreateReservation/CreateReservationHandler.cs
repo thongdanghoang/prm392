@@ -1,7 +1,7 @@
 ﻿namespace prm392.Presenter.Business.ReservationBusiness.CreateReservation;
 
 public record CreateReservationCommand
-    (Guid UserId, Guid SeatId, int Version, DateOnly ReservationDate, TimeOnly FromTime, TimeOnly ToTime,
+    (Guid UserId, Guid SeatId, int Version, DateOnly ReservationDate, TimeOnly TimeSlotFromInclusive, TimeOnly TimeSlotToExclusive,
     string Status, short NumberOfGuests, List<ReservationMenuItem> MenuItems)
     : ICommand<CreateReservationResult>;
 
@@ -19,8 +19,8 @@ public class CreateReservationHandler(Prm392Context _db)
 
         bool isAvailable = !_db.Reservations.Any(r => r.SeatId == command.SeatId &&
                                                            r.ReservationDate == command.ReservationDate &&
-                                                           (command.FromTime >= r.TimeSlotFromInclusive && command.FromTime < r.TimeSlotToExclusive ||
-                                                           command.ToTime > r.TimeSlotFromInclusive && command.ToTime <= r.TimeSlotToExclusive));
+                                                           (command.TimeSlotFromInclusive >= r.TimeSlotFromInclusive && command.TimeSlotFromInclusive < r.TimeSlotToExclusive ||
+                                                           command.TimeSlotToExclusive > r.TimeSlotFromInclusive && command.TimeSlotToExclusive <= r.TimeSlotToExclusive));
         if (!isAvailable)
             throw new Exception("Seat is not available for the selected time slot!");
 
@@ -31,14 +31,15 @@ public class CreateReservationHandler(Prm392Context _db)
             SeatId = command.SeatId,
             Version = command.Version,
             ReservationDate = command.ReservationDate,
-            TimeSlotFromInclusive = command.FromTime,
-            TimeSlotToExclusive = command.ToTime,
+            TimeSlotFromInclusive = command.TimeSlotFromInclusive,
+            TimeSlotToExclusive = command.TimeSlotToExclusive,
             Status = command.Status,
             NumberOfGuests = command.NumberOfGuests,
             CreatedDate = DateTime.Now,
             CreatedBy = "Staff",
             LastModifiedDate = DateTime.Now,
-            LastModifiedBy = "Staff"
+            LastModifiedBy = "Staff",
+
         };
 
         _db.Reservations.Add(reservation);

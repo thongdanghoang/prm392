@@ -1,7 +1,7 @@
 ﻿namespace prm392.Presenter.Business.ReservationBusiness.CreateReservation;
 
-public record CreateReservationRequest(Guid UserId, Guid SeatId, int Version, DateOnly ReservationDate,
-    TimeOnly TimeSlotFromInclusive, TimeOnly TimeSlotToExclusive, string Status, short NumberOfGuests, List<ReservationMenuItem> MenuItems);
+public record CreateReservationRequest(Guid UserId, Guid SeatId, int Version, DateOnly ReservationDate, TimeOnly TimeSlotFromInclusive, TimeOnly TimeSlotToExclusive,
+    string Status, short NumberOfGuests, List<ReservationMenuItem> MenuItems);
 public record CreateReservationResponse(Guid Id);
 public class CreateReservationEndpoint : ICarterModule
 {

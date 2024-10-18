@@ -3,16 +3,36 @@
   "WorkspaceRootPath": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|d:\\github_projects\\prm392project\\prm392\\dotnet\\src\\prm392.presenter\\models\\reservationmenuitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|solutionrelative:prm392.presenter\\models\\reservationmenuitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|d:\\github_projects\\prm392project\\prm392\\dotnet\\src\\prm392.presenter\\business\\reservationbusiness\\deletereservation\\deletereservationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|solutionrelative:prm392.presenter\\business\\reservationbusiness\\deletereservation\\deletereservationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|d:\\github_projects\\prm392project\\prm392\\dotnet\\src\\prm392.presenter\\business\\reservationbusiness\\deletereservation\\deletereservationendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|solutionrelative:prm392.presenter\\business\\reservationbusiness\\deletereservation\\deletereservationendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|d:\\github_projects\\prm392project\\prm392\\dotnet\\src\\prm392.presenter\\business\\reservationbusiness\\updatereservation\\updatereservationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|solutionrelative:prm392.presenter\\business\\reservationbusiness\\updatereservation\\updatereservationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|d:\\github_projects\\prm392project\\prm392\\dotnet\\src\\prm392.presenter\\business\\reservationbusiness\\updatereservation\\updatereservationendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|solutionrelative:prm392.presenter\\business\\reservationbusiness\\updatereservation\\updatereservationendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|d:\\github_projects\\prm392project\\prm392\\dotnet\\src\\prm392.presenter\\business\\reservationbusiness\\getreservationbyid\\getreservationbyidendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|solutionrelative:prm392.presenter\\business\\reservationbusiness\\getreservationbyid\\getreservationbyidendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|d:\\github_projects\\prm392project\\prm392\\dotnet\\src\\prm392.presenter\\business\\reservationbusiness\\getreservations\\getreservationshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|solutionrelative:prm392.presenter\\business\\reservationbusiness\\getreservations\\getreservationshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|d:\\github_projects\\prm392project\\prm392\\dotnet\\src\\prm392.presenter\\business\\reservationbusiness\\getreservations\\getreservationsendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|solutionrelative:prm392.presenter\\business\\reservationbusiness\\getreservations\\getreservationsendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|d:\\github_projects\\prm392project\\prm392\\dotnet\\src\\prm392.presenter\\business\\reservationbusiness\\createreservation\\createreservationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|solutionrelative:prm392.presenter\\business\\reservationbusiness\\createreservation\\createreservationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|d:\\github_projects\\prm392project\\prm392\\dotnet\\src\\prm392.presenter\\business\\reservationbusiness\\deletereservation\\deletereservationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|solutionrelative:prm392.presenter\\business\\reservationbusiness\\deletereservation\\deletereservationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|d:\\github_projects\\prm392project\\prm392\\dotnet\\src\\prm392.presenter\\business\\reservationbusiness\\createreservation\\createreservationendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,6 +41,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|d:\\github_projects\\prm392project\\prm392\\dotnet\\src\\prm392.presenter\\models\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|solutionrelative:prm392.presenter\\models\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|d:\\github_projects\\prm392project\\prm392\\dotnet\\src\\prm392.presenter\\models\\reservationmenuitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|solutionrelative:prm392.presenter\\models\\reservationmenuitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|d:\\github_projects\\prm392project\\prm392\\dotnet\\src\\prm392.presenter\\models\\seat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,32 +59,8 @@
       "RelativeMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|solutionrelative:prm392.presenter\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|d:\\github_projects\\prm392project\\prm392\\dotnet\\src\\prm392.presenter\\business\\reservationbusiness\\updatereservation\\updatereservationendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|solutionrelative:prm392.presenter\\business\\reservationbusiness\\updatereservation\\updatereservationendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|d:\\github_projects\\prm392project\\prm392\\dotnet\\src\\prm392.presenter\\business\\reservationbusiness\\updatereservation\\updatereservationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|solutionrelative:prm392.presenter\\business\\reservationbusiness\\updatereservation\\updatereservationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|d:\\github_projects\\prm392project\\prm392\\dotnet\\src\\prm392.presenter\\business\\reservationbusiness\\deletereservation\\deletereservationendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|solutionrelative:prm392.presenter\\business\\reservationbusiness\\deletereservation\\deletereservationendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|d:\\github_projects\\prm392project\\prm392\\dotnet\\src\\prm392.presenter\\business\\reservationbusiness\\getreservationbyid\\getreservationbyidendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|solutionrelative:prm392.presenter\\business\\reservationbusiness\\getreservationbyid\\getreservationbyidendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|d:\\github_projects\\prm392project\\prm392\\dotnet\\src\\prm392.presenter\\business\\reservationbusiness\\getreservationbyid\\getreservationbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|solutionrelative:prm392.presenter\\business\\reservationbusiness\\getreservationbyid\\getreservationbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|d:\\github_projects\\prm392project\\prm392\\dotnet\\src\\prm392.presenter\\business\\reservationbusiness\\getreservations\\getreservationshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|solutionrelative:prm392.presenter\\business\\reservationbusiness\\getreservations\\getreservationshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|d:\\github_projects\\prm392project\\prm392\\dotnet\\src\\prm392.presenter\\business\\reservationbusiness\\getreservations\\getreservationsendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|solutionrelative:prm392.presenter\\business\\reservationbusiness\\getreservations\\getreservationsendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}|prm392.Presenter\\prm392.Presenter.csproj|d:\\github_projects\\prm392project\\prm392\\dotnet\\src\\prm392.presenter\\business\\seatbusiness\\updateseat\\updateseathandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -205,8 +205,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 345,
-          "SelectedChildIndex": 10,
+          "DockedHeight": 379,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -230,137 +230,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MenuItem.cs",
-              "DocumentMoniker": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Models\\MenuItem.cs",
-              "RelativeDocumentMoniker": "prm392.Presenter\\Models\\MenuItem.cs",
-              "ToolTip": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Models\\MenuItem.cs",
-              "RelativeToolTip": "prm392.Presenter\\Models\\MenuItem.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAcwAwAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T03:04:47.192Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Seat.cs",
-              "DocumentMoniker": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Models\\Seat.cs",
-              "RelativeDocumentMoniker": "prm392.Presenter\\Models\\Seat.cs",
-              "ToolTip": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Models\\Seat.cs",
-              "RelativeToolTip": "prm392.Presenter\\Models\\Seat.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAcwBAAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T16:52:05.178Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CreateReservationHandler.cs",
-              "DocumentMoniker": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Business\\ReservationBusiness\\CreateReservation\\CreateReservationHandler.cs",
-              "RelativeDocumentMoniker": "prm392.Presenter\\Business\\ReservationBusiness\\CreateReservation\\CreateReservationHandler.cs",
-              "ToolTip": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Business\\ReservationBusiness\\CreateReservation\\CreateReservationHandler.cs",
-              "RelativeToolTip": "prm392.Presenter\\Business\\ReservationBusiness\\CreateReservation\\CreateReservationHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T03:38:39.031Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DeleteReservationHandler.cs",
-              "DocumentMoniker": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Business\\ReservationBusiness\\DeleteReservation\\DeleteReservationHandler.cs",
-              "RelativeDocumentMoniker": "prm392.Presenter\\Business\\ReservationBusiness\\DeleteReservation\\DeleteReservationHandler.cs",
-              "ToolTip": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Business\\ReservationBusiness\\DeleteReservation\\DeleteReservationHandler.cs",
-              "RelativeToolTip": "prm392.Presenter\\Business\\ReservationBusiness\\DeleteReservation\\DeleteReservationHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T14:42:42.743Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Models\\User.cs",
-              "RelativeDocumentMoniker": "prm392.Presenter\\Models\\User.cs",
-              "ToolTip": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Models\\User.cs",
-              "RelativeToolTip": "prm392.Presenter\\Models\\User.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAAwA0AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T03:52:16.833Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ReservationMenuItem.cs",
-              "DocumentMoniker": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Models\\ReservationMenuItem.cs",
-              "RelativeDocumentMoniker": "prm392.Presenter\\Models\\ReservationMenuItem.cs",
-              "ToolTip": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Models\\ReservationMenuItem.cs",
-              "RelativeToolTip": "prm392.Presenter\\Models\\ReservationMenuItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T03:04:49.892Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Reservation.cs",
-              "DocumentMoniker": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Models\\Reservation.cs",
-              "RelativeDocumentMoniker": "prm392.Presenter\\Models\\Reservation.cs",
-              "ToolTip": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Models\\Reservation.cs",
-              "RelativeToolTip": "prm392.Presenter\\Models\\Reservation.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAwAkAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T03:04:49.224Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "CreateReservationEndpoint.cs",
-              "DocumentMoniker": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Business\\ReservationBusiness\\CreateReservation\\CreateReservationEndpoint.cs",
-              "RelativeDocumentMoniker": "prm392.Presenter\\Business\\ReservationBusiness\\CreateReservation\\CreateReservationEndpoint.cs",
-              "ToolTip": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Business\\ReservationBusiness\\CreateReservation\\CreateReservationEndpoint.cs",
-              "RelativeToolTip": "prm392.Presenter\\Business\\ReservationBusiness\\CreateReservation\\CreateReservationEndpoint.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T18:23:48.208Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "UpdateReservationEndpoint.cs",
               "DocumentMoniker": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Business\\ReservationBusiness\\UpdateReservation\\UpdateReservationEndpoint.cs",
               "RelativeDocumentMoniker": "prm392.Presenter\\Business\\ReservationBusiness\\UpdateReservation\\UpdateReservationEndpoint.cs",
               "ToolTip": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Business\\ReservationBusiness\\UpdateReservation\\UpdateReservationEndpoint.cs",
               "RelativeToolTip": "prm392.Presenter\\Business\\ReservationBusiness\\UpdateReservation\\UpdateReservationEndpoint.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAMAAABaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-16T14:53:05.734Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "UpdateReservationHandler.cs",
               "DocumentMoniker": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Business\\ReservationBusiness\\UpdateReservation\\UpdateReservationHandler.cs",
               "RelativeDocumentMoniker": "prm392.Presenter\\Business\\ReservationBusiness\\UpdateReservation\\UpdateReservationHandler.cs",
               "ToolTip": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Business\\ReservationBusiness\\UpdateReservation\\UpdateReservationHandler.cs",
               "RelativeToolTip": "prm392.Presenter\\Business\\ReservationBusiness\\UpdateReservation\\UpdateReservationHandler.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAgwCMAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-16T14:52:51.933Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 1,
               "Title": "DeleteReservationEndpoint.cs",
               "DocumentMoniker": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Business\\ReservationBusiness\\DeleteReservation\\DeleteReservationEndpoint.cs",
               "RelativeDocumentMoniker": "prm392.Presenter\\Business\\ReservationBusiness\\DeleteReservation\\DeleteReservationEndpoint.cs",
@@ -373,46 +269,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 0,
+              "Title": "DeleteReservationHandler.cs",
+              "DocumentMoniker": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Business\\ReservationBusiness\\DeleteReservation\\DeleteReservationHandler.cs",
+              "RelativeDocumentMoniker": "prm392.Presenter\\Business\\ReservationBusiness\\DeleteReservation\\DeleteReservationHandler.cs",
+              "ToolTip": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Business\\ReservationBusiness\\DeleteReservation\\DeleteReservationHandler.cs",
+              "RelativeToolTip": "prm392.Presenter\\Business\\ReservationBusiness\\DeleteReservation\\DeleteReservationHandler.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAYwBYAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T14:42:42.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "GetReservationByIdEndpoint.cs",
               "DocumentMoniker": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Business\\ReservationBusiness\\GetReservationById\\GetReservationByIdEndpoint.cs",
               "RelativeDocumentMoniker": "prm392.Presenter\\Business\\ReservationBusiness\\GetReservationById\\GetReservationByIdEndpoint.cs",
               "ToolTip": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Business\\ReservationBusiness\\GetReservationById\\GetReservationByIdEndpoint.cs",
               "RelativeToolTip": "prm392.Presenter\\Business\\ReservationBusiness\\GetReservationById\\GetReservationByIdEndpoint.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-16T14:23:33.608Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "GetReservationByIdHandler.cs",
-              "DocumentMoniker": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Business\\ReservationBusiness\\GetReservationById\\GetReservationByIdHandler.cs",
-              "RelativeDocumentMoniker": "prm392.Presenter\\Business\\ReservationBusiness\\GetReservationById\\GetReservationByIdHandler.cs",
-              "ToolTip": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Business\\ReservationBusiness\\GetReservationById\\GetReservationByIdHandler.cs",
-              "RelativeToolTip": "prm392.Presenter\\Business\\ReservationBusiness\\GetReservationById\\GetReservationByIdHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T14:23:20.851Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 5,
               "Title": "GetReservationsHandler.cs",
               "DocumentMoniker": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Business\\ReservationBusiness\\GetReservations\\GetReservationsHandler.cs",
               "RelativeDocumentMoniker": "prm392.Presenter\\Business\\ReservationBusiness\\GetReservations\\GetReservationsHandler.cs",
               "ToolTip": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Business\\ReservationBusiness\\GetReservations\\GetReservationsHandler.cs",
               "RelativeToolTip": "prm392.Presenter\\Business\\ReservationBusiness\\GetReservations\\GetReservationsHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAQwAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-16T13:53:22.847Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 6,
               "Title": "GetReservationsEndpoint.cs",
               "DocumentMoniker": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Business\\ReservationBusiness\\GetReservations\\GetReservationsEndpoint.cs",
               "RelativeDocumentMoniker": "prm392.Presenter\\Business\\ReservationBusiness\\GetReservations\\GetReservationsEndpoint.cs",
@@ -425,6 +321,106 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CreateReservationHandler.cs",
+              "DocumentMoniker": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Business\\ReservationBusiness\\CreateReservation\\CreateReservationHandler.cs",
+              "RelativeDocumentMoniker": "prm392.Presenter\\Business\\ReservationBusiness\\CreateReservation\\CreateReservationHandler.cs",
+              "ToolTip": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Business\\ReservationBusiness\\CreateReservation\\CreateReservationHandler.cs",
+              "RelativeToolTip": "prm392.Presenter\\Business\\ReservationBusiness\\CreateReservation\\CreateReservationHandler.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwDYAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T03:38:39.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CreateReservationEndpoint.cs",
+              "DocumentMoniker": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Business\\ReservationBusiness\\CreateReservation\\CreateReservationEndpoint.cs",
+              "RelativeDocumentMoniker": "prm392.Presenter\\Business\\ReservationBusiness\\CreateReservation\\CreateReservationEndpoint.cs",
+              "ToolTip": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Business\\ReservationBusiness\\CreateReservation\\CreateReservationEndpoint.cs",
+              "RelativeToolTip": "prm392.Presenter\\Business\\ReservationBusiness\\CreateReservation\\CreateReservationEndpoint.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T18:23:48.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Reservation.cs",
+              "DocumentMoniker": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Models\\Reservation.cs",
+              "RelativeDocumentMoniker": "prm392.Presenter\\Models\\Reservation.cs",
+              "ToolTip": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Models\\Reservation.cs",
+              "RelativeToolTip": "prm392.Presenter\\Models\\Reservation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T03:04:49.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ReservationMenuItem.cs",
+              "DocumentMoniker": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Models\\ReservationMenuItem.cs",
+              "RelativeDocumentMoniker": "prm392.Presenter\\Models\\ReservationMenuItem.cs",
+              "ToolTip": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Models\\ReservationMenuItem.cs",
+              "RelativeToolTip": "prm392.Presenter\\Models\\ReservationMenuItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T03:04:49.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Models\\User.cs",
+              "RelativeDocumentMoniker": "prm392.Presenter\\Models\\User.cs",
+              "ToolTip": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Models\\User.cs",
+              "RelativeToolTip": "prm392.Presenter\\Models\\User.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAwA0AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T03:52:16.833Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Seat.cs",
+              "DocumentMoniker": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Models\\Seat.cs",
+              "RelativeDocumentMoniker": "prm392.Presenter\\Models\\Seat.cs",
+              "ToolTip": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Models\\Seat.cs",
+              "RelativeToolTip": "prm392.Presenter\\Models\\Seat.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAcwBAAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T16:52:05.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MenuItem.cs",
+              "DocumentMoniker": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Models\\MenuItem.cs",
+              "RelativeDocumentMoniker": "prm392.Presenter\\Models\\MenuItem.cs",
+              "ToolTip": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Models\\MenuItem.cs",
+              "RelativeToolTip": "prm392.Presenter\\Models\\MenuItem.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAcwAwAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T03:04:47.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GetReservationByIdHandler.cs",
+              "DocumentMoniker": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Business\\ReservationBusiness\\GetReservationById\\GetReservationByIdHandler.cs",
+              "RelativeDocumentMoniker": "prm392.Presenter\\Business\\ReservationBusiness\\GetReservationById\\GetReservationByIdHandler.cs",
+              "ToolTip": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Business\\ReservationBusiness\\GetReservationById\\GetReservationByIdHandler.cs",
+              "RelativeToolTip": "prm392.Presenter\\Business\\ReservationBusiness\\GetReservationById\\GetReservationByIdHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T14:23:20.851Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 15,
               "Title": "UpdateSeatHandler.cs",
               "DocumentMoniker": "D:\\Github_projects\\prm392Project\\prm392\\dotnet\\src\\prm392.Presenter\\Business\\SeatBusiness\\UpdateSeat\\UpdateSeatHandler.cs",
@@ -433,8 +429,7 @@
               "RelativeToolTip": "prm392.Presenter\\Business\\SeatBusiness\\UpdateSeat\\UpdateSeatHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T16:17:22.187Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T16:17:22.187Z"
             },
             {
               "$type": "Document",
@@ -446,8 +441,7 @@
               "RelativeToolTip": "prm392.Presenter\\Business\\SeatBusiness\\UpdateSeat\\UpdateSeatEndpoint.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAxwAIAAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T16:17:33.355Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T16:17:33.355Z"
             },
             {
               "$type": "Document",
@@ -459,8 +453,7 @@
               "RelativeToolTip": "prm392.Presenter\\Business\\SeatBusiness\\CreateSeat\\CreateSeatHandler.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAzwBcAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T16:16:24.208Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T16:16:24.208Z"
             },
             {
               "$type": "Document",
@@ -472,8 +465,7 @@
               "RelativeToolTip": "prm392.Presenter\\Business\\SeatBusiness\\CreateSeat\\CreateSeatEndpoint.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAqwAYAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T16:16:36.718Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T16:16:36.718Z"
             },
             {
               "$type": "Document",
@@ -485,8 +477,7 @@
               "RelativeToolTip": "prm392.Presenter\\Business\\SeatBusiness\\GetSeatById\\GetSeatByIdEndpoint.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T16:15:34.381Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T16:15:34.381Z"
             },
             {
               "$type": "Document",
@@ -498,8 +489,7 @@
               "RelativeToolTip": "prm392.Presenter\\Business\\SeatBusiness\\GetSeatById\\GetSeatByIdHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T16:15:21.1Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T16:15:21.1Z"
             },
             {
               "$type": "Document",
@@ -511,8 +501,7 @@
               "RelativeToolTip": "prm392.Presenter\\Business\\SeatBusiness\\DeleteSeat\\DeleteSeatHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T16:16:52.942Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T16:16:52.942Z"
             },
             {
               "$type": "Document",
@@ -524,8 +513,7 @@
               "RelativeToolTip": "prm392.Presenter\\Business\\SeatBusiness\\DeleteSeat\\DeleteSeatEndpoint.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T16:17:08.827Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T16:17:08.827Z"
             },
             {
               "$type": "Document",
@@ -537,8 +525,7 @@
               "RelativeToolTip": "prm392.Presenter\\Business\\SeatBusiness\\GetSeats\\GetSeatsHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T16:14:50.509Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T16:14:50.509Z"
             },
             {
               "$type": "Document",
@@ -550,8 +537,7 @@
               "RelativeToolTip": "prm392.Presenter\\Business\\SeatBusiness\\GetSeats\\GetSeatsEndpoint.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T16:15:01.496Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T16:15:01.496Z"
             },
             {
               "$type": "Document",
@@ -563,8 +549,7 @@
               "RelativeToolTip": "prm392.Presenter\\Business\\MenuItemBusiness\\UpdateMenuItem\\UpdateMenuItemEndpoint.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAYwAIAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T10:48:39.397Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T10:48:39.397Z"
             },
             {
               "$type": "Document",
@@ -576,8 +561,7 @@
               "RelativeToolTip": "prm392.Presenter\\Business\\MenuItemBusiness\\UpdateMenuItem\\UpdateMenuItemHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T10:48:25.431Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T10:48:25.431Z"
             },
             {
               "$type": "Document",
@@ -589,8 +573,7 @@
               "RelativeToolTip": "prm392.Presenter\\Business\\MenuItemBusiness\\GetMenuItemById\\GetMenuItemByIdHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T10:27:27.92Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T10:27:27.92Z"
             },
             {
               "$type": "Document",
@@ -602,8 +585,7 @@
               "RelativeToolTip": "prm392.Presenter\\Business\\MenuItemBusiness\\GetMenuItemById\\GetMenuItemByIdEndpoint.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T10:27:45.993Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T10:27:45.993Z"
             },
             {
               "$type": "Document",
@@ -615,8 +597,7 @@
               "RelativeToolTip": "prm392.Presenter\\Business\\MenuItemBusiness\\GetMenuItemByCategory\\GetMenuItemByCategoryEndpoint.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T10:37:05.663Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T10:37:05.663Z"
             },
             {
               "$type": "Document",
@@ -628,8 +609,7 @@
               "RelativeToolTip": "prm392.Presenter\\Business\\MenuItemBusiness\\GetMenuItemByCategory\\GetMenuItemByCategoryHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T10:36:53.923Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T10:36:53.923Z"
             },
             {
               "$type": "Document",
@@ -641,8 +621,7 @@
               "RelativeToolTip": "prm392.Presenter\\Business\\MenuItemBusiness\\GetMenuItems\\GetMenuItemsEndpoint.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T09:55:30.142Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T09:55:30.142Z"
             },
             {
               "$type": "Document",
@@ -654,8 +633,7 @@
               "RelativeToolTip": "prm392.Presenter\\Business\\MenuItemBusiness\\DeleteMenuItem\\DeleteMenuItemHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T11:03:03.874Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T11:03:03.874Z"
             },
             {
               "$type": "Document",
@@ -667,8 +645,7 @@
               "RelativeToolTip": "prm392.Presenter\\Business\\MenuItemBusiness\\CreateMenuItem\\CreateMenuItemHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T10:06:30.011Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T10:06:30.011Z"
             },
             {
               "$type": "Document",
@@ -680,8 +657,7 @@
               "RelativeToolTip": "prm392.Presenter\\Business\\MenuItemBusiness\\DeleteMenuItem\\DeleteMenuItemEndpoint.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T11:03:17.21Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T11:03:17.21Z"
             },
             {
               "$type": "Document",
@@ -693,8 +669,7 @@
               "RelativeToolTip": "prm392.Presenter\\Business\\MenuItemBusiness\\CreateMenuItem\\CreateMenuItemEndpoint.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T10:06:57.355Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T10:06:57.355Z"
             },
             {
               "$type": "Document",
@@ -706,8 +681,7 @@
               "RelativeToolTip": "BuildingBlocks\\CQRS\\IQueryHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T03:47:24.805Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T03:47:24.805Z"
             },
             {
               "$type": "Document",
@@ -719,8 +693,7 @@
               "RelativeToolTip": "BuildingBlocks\\CQRS\\IQuery.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T03:47:22.631Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T03:47:22.631Z"
             },
             {
               "$type": "Document",
@@ -732,8 +705,7 @@
               "RelativeToolTip": "BuildingBlocks\\CQRS\\ICommandHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T03:47:16.056Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T03:47:16.056Z"
             },
             {
               "$type": "Document",
@@ -745,8 +717,7 @@
               "RelativeToolTip": "BuildingBlocks\\CQRS\\ICommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T03:47:11.486Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T03:47:11.486Z"
             },
             {
               "$type": "Document",
@@ -758,8 +729,7 @@
               "RelativeToolTip": "prm392.Presenter\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T04:35:19.247Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T04:35:19.247Z"
             },
             {
               "$type": "Document",

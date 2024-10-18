@@ -1,7 +1,7 @@
 ﻿namespace prm392.Presenter.Business.ReservationBusiness.UpdateReservation;
 
-public record UpdateReservationCommand(Guid ReservationId, Guid SeatId, DateOnly ReservationDate, 
-    TimeOnly FromTime, TimeOnly ToTime, string Status, short NumberOfGuests, List<ReservationMenuItem> UpdatedMenuItems) 
+public record UpdateReservationCommand(Guid ReservationId, Guid SeatId, int Version, DateOnly ReservationDate, 
+    TimeOnly TimeSlotFromInclusive, TimeOnly TimeSlotToExclusive, string Status, short NumberOfGuests, List<ReservationMenuItem> UpdatedMenuItems) 
     : ICommand<UpdateReservationResult>;
 public record UpdateReservationResult(bool IsSuccess);
 public class UpdateReservationHandler(Prm392Context _db)
@@ -19,8 +19,8 @@ public class UpdateReservationHandler(Prm392Context _db)
         bool isAvailable = !_db.Reservations.Any(r => r.Id != request.ReservationId &&
                                                            r.SeatId == request.SeatId &&
                                                            r.ReservationDate == request.ReservationDate &&
-                                                           ((request.FromTime >= r.TimeSlotFromInclusive && request.FromTime < r.TimeSlotToExclusive) ||
-                                                           (request.ToTime > r.TimeSlotFromInclusive && request.ToTime <= r.TimeSlotToExclusive)));
+                                                           ((request.TimeSlotFromInclusive >= r.TimeSlotFromInclusive && request.TimeSlotFromInclusive < r.TimeSlotToExclusive) ||
+                                                           (request.TimeSlotToExclusive > r.TimeSlotFromInclusive && request.TimeSlotToExclusive <= r.TimeSlotToExclusive)));
         if (!isAvailable)
         {
             throw new InvalidOperationException("Seat is not available for the selected time slot!");
@@ -28,11 +28,12 @@ public class UpdateReservationHandler(Prm392Context _db)
 
         reservation.SeatId = request.SeatId;
         reservation.ReservationDate = request.ReservationDate;
-        reservation.TimeSlotFromInclusive = request.FromTime;
-        reservation.TimeSlotToExclusive = request.ToTime;
+        reservation.Version = request.Version;
+        reservation.TimeSlotFromInclusive = request.TimeSlotFromInclusive;
+        reservation.TimeSlotToExclusive = request.TimeSlotToExclusive;
         reservation.Status = request.Status;
         reservation.NumberOfGuests = request.NumberOfGuests;
-        reservation.LastModifiedDate = DateTime.UtcNow;
+        reservation.LastModifiedDate = DateTime.Now;
         reservation.LastModifiedBy = "Staff";
 
         var existingMenuItems = _db.ReservationMenuItems.Where(r 

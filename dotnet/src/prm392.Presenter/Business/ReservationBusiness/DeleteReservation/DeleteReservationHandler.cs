@@ -14,20 +14,18 @@ public class DeleteReservationHandler(Prm392Context _db)
             throw new Exception("Can not find reservation to delete!");
 
         var menuItems = _db.ReservationMenuItems
-            .Where(mi => mi.ReservationId == exist.ReservationMenuItem.ReservationId)
+            .Where(mi => mi.ReservationId == request.Id)
             .ToList();
 
         _db.ReservationMenuItems.RemoveRange(menuItems);
-        await _db.SaveChangesAsync();
+        await _db.SaveChangesAsync(cancellationToken);
 
-        var reservation = await _db.Reservations.FindAsync(exist.ReservationMenuItem.ReservationId);
+        var reservation = await _db.Reservations.FindAsync(request.Id);
         if (reservation != null)
         {
             _db.Reservations.Remove(reservation);
             await _db.SaveChangesAsync();
         }
-
-
         return new DeleteReservationResult(true);
     }
 }
