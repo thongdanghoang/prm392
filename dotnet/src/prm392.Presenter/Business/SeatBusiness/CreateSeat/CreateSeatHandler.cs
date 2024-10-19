@@ -13,7 +13,7 @@ public class CreateSeatHandler(Prm392Context _db)
             throw new Exception("Seat already exist!");
         var seatNew = new Seat
         {
-            Id = request.Id,
+            Id = Guid.NewGuid(),
             Name = request.Name,
             Type = request.Type,
             Capacity = request.Capacity,

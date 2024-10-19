@@ -13,7 +13,7 @@ public class CreateMenuItemHandler(Prm392Context _db)
             throw new Exception("Menu item already exists!");
         var menuItem = new MenuItem
         {
-            Id = command.Id,
+            Id = Guid.NewGuid(),
             Name = command.Name,
             Description = command.Description,
             Category = command.Category,
