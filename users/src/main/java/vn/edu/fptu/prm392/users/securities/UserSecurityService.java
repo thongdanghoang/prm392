@@ -6,7 +6,9 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import vn.edu.fptu.prm392.users.entities.AuthorityEntity;
 import vn.edu.fptu.prm392.users.entities.UserEntity;
+import vn.edu.fptu.prm392.users.enums.UserRole;
 import vn.edu.fptu.prm392.users.repositories.UserRepository;
 
 import java.util.Optional;
@@ -28,11 +30,15 @@ public class UserSecurityService implements UserDetailsService {
                 .orElseThrow(() -> new UsernameNotFoundException("User not found: " + username));
     }
 
-    public String addUser(UserEntity userEntity) {
+    public void addUser(UserEntity userEntity) {
         // Encode password before saving the user
         userEntity.setPassword(encoder.encode(userEntity.getPassword()));
         repository.save(userEntity);
-        return "User Added Successfully";
     }
+
+    public Optional<AuthorityEntity> findAuthority(UserRole role) {
+        return repository.findUserByRole(role.toString());
+    }
+
 }
 

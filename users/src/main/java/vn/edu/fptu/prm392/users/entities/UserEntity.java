@@ -25,7 +25,7 @@ public class UserEntity extends AbstractAuditableEntity {
 
     public static final String USER_AUTHORITIES_ENTITY_GRAPH = "user-authorities-entity-graph";
 
-    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
+    @ManyToMany(fetch = FetchType.LAZY)
     @Fetch(FetchMode.SUBSELECT)
     @JoinTable(
             name = "users_authorities",

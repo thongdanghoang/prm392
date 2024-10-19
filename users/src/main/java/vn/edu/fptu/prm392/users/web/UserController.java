@@ -1,11 +1,12 @@
 package vn.edu.fptu.prm392.users.web;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import vn.edu.fptu.prm392.users.dtos.RegisterRequest;
-import vn.edu.fptu.prm392.users.entities.AuthorityEntity;
 import vn.edu.fptu.prm392.users.entities.UserEntity;
+import vn.edu.fptu.prm392.users.enums.UserRole;
 import vn.edu.fptu.prm392.users.securities.UserSecurityService;
 
 import java.util.Set;
@@ -24,12 +25,15 @@ public class UserController {
     }
 
     @PostMapping("/sign-up")
-    public String addNewUser(@RequestBody RegisterRequest user) {
+    public ResponseEntity<Void> addNewUser(@RequestBody RegisterRequest user) {
         UserEntity register = UserEntity.register(user.username(), user.password());
-        AuthorityEntity userRole = new AuthorityEntity();
-        userRole.setRole("ROLE_USER");
-        register.setAuthorities(Set.of(userRole));
-        return service.addUser(register);
+        var userRole = service.findAuthority(UserRole.ROLE_USER);
+        if(userRole.isEmpty()) {
+            return ResponseEntity.badRequest().build();
+        }
+        register.setAuthorities(Set.of(userRole.get()));
+        service.addUser(register);
+        return ResponseEntity.ok().build();
     }
 
 }
