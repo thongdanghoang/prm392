@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingB
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildingBlocks", "BuildingBlocks\BuildingBlocks.csproj", "{10768299-2D7D-4BE0-9CF8-7275BEFA4DD9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prm392.Presenter", "prm392.Presenter\prm392.Presenter.csproj", "{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "prm392.Presenter", "prm392.Presenter\prm392.Presenter.csproj", "{E3EF93CD-3479-47FC-A009-3C9ED59DCF34}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

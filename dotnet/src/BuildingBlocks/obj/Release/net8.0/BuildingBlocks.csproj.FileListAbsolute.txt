@@ -1,0 +1,13 @@
+D:\Github_projects\prm392Project\prm392\dotnet\src\BuildingBlocks\bin\Release\net8.0\BuildingBlocks.deps.json
+D:\Github_projects\prm392Project\prm392\dotnet\src\BuildingBlocks\bin\Release\net8.0\BuildingBlocks.dll
+D:\Github_projects\prm392Project\prm392\dotnet\src\BuildingBlocks\bin\Release\net8.0\BuildingBlocks.pdb
+D:\Github_projects\prm392Project\prm392\dotnet\src\BuildingBlocks\obj\Release\net8.0\BuildingBlocks.csproj.AssemblyReference.cache
+D:\Github_projects\prm392Project\prm392\dotnet\src\BuildingBlocks\obj\Release\net8.0\BuildingBlocks.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github_projects\prm392Project\prm392\dotnet\src\BuildingBlocks\obj\Release\net8.0\BuildingBlocks.AssemblyInfoInputs.cache
+D:\Github_projects\prm392Project\prm392\dotnet\src\BuildingBlocks\obj\Release\net8.0\BuildingBlocks.AssemblyInfo.cs
+D:\Github_projects\prm392Project\prm392\dotnet\src\BuildingBlocks\obj\Release\net8.0\BuildingBlocks.csproj.CoreCompileInputs.cache
+D:\Github_projects\prm392Project\prm392\dotnet\src\BuildingBlocks\obj\Release\net8.0\BuildingBlocks.sourcelink.json
+D:\Github_projects\prm392Project\prm392\dotnet\src\BuildingBlocks\obj\Release\net8.0\BuildingBlocks.dll
+D:\Github_projects\prm392Project\prm392\dotnet\src\BuildingBlocks\obj\Release\net8.0\refint\BuildingBlocks.dll
+D:\Github_projects\prm392Project\prm392\dotnet\src\BuildingBlocks\obj\Release\net8.0\BuildingBlocks.pdb
+D:\Github_projects\prm392Project\prm392\dotnet\src\BuildingBlocks\obj\Release\net8.0\ref\BuildingBlocks.dll
