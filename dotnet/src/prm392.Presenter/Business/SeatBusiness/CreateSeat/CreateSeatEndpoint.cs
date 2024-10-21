@@ -1,6 +1,7 @@
 ﻿namespace prm392.Presenter.Business.SeatBusiness.CreateSeat;
 
-public record CreateSeatRequest(Guid Id, string Name, string Type, short Capacity, short FloorNumber);
+public record CreateSeatRequest(Guid Id, string Name, string Type, short Capacity, short FloorNumber
+    , IFormFile ImgUrl);
 public record CreateSeatResponse(Guid Id);
 public class CreateSeatEndpoint : ICarterModule
 {

@@ -13,6 +13,7 @@ public partial class Seat
     /// (e.g., window, booth, outdoor)
     /// </summary>
     public string? Type { get; set; }
+    public string? Image { get; set; }
 
     public short Capacity { get; set; }
 

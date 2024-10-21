@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("prm392.Presenter")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ebb3150f0d4ce849e2025bfdb13baf5f1351a167")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5646b107808faec24e80e4ef1f3ecb19fbc2f452")]
 [assembly: System.Reflection.AssemblyProductAttribute("prm392.Presenter")]
 [assembly: System.Reflection.AssemblyTitleAttribute("prm392.Presenter")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

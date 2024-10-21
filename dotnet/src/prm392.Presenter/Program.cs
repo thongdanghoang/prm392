@@ -1,10 +1,12 @@
+using Microsoft.EntityFrameworkCore;
 namespace prm392.Presenter;
 public class Program
 {
     public static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
-
+        //add cloudiary 
+        builder.Services.AddCloudinary();
         // Add services to the container.
         builder.Services.AddAuthorization();
         builder.Services.AddDbContext<Prm392Context>(opts =>

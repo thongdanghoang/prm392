@@ -1,6 +1,7 @@
 ﻿namespace prm392.Presenter.Business.SeatBusiness.UpdateSeat;
 
-public record UpdateSeatRequest(Guid Id, string Name, string Type, short Capacity, short FloorNumber);
+public record UpdateSeatRequest(Guid Id, string Name, string Type, short Capacity, short FloorNumber
+    , IFormFile ImgUrl);
 public record UpdateSeatResponse(bool IsSuccess);
 public class UpdateSeatEndpoint : ICarterModule
 {
