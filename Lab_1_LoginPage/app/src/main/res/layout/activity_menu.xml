@@ -1,36 +1,50 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:gravity="center"
+    android:orientation="vertical">
 
-    <!-- Restaurant name header -->
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#673AB7"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:title="Order Details"
+        android:titleTextColor="@android:color/white" /><!-- Đặt màu chữ thành trắng -->
+
+
+    <!-- Thêm padding vào các thành phần bên dưới -->
     <TextView
         android:id="@+id/restaurant_name_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Restaurant Name"
-        android:textSize="24sp"
-        android:textStyle="bold"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginBottom="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="Restaurant Menu"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <!-- RecyclerView for food items -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_food_menu"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
 
     <!-- Check Out Button -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_food_menu"
+        android:layout_width="373dp"
+        android:layout_height="659dp"
+        android:layout_weight="1"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp" />
+
     <Button
         android:id="@+id/btn_checkout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:text="Check Out"
-        android:textSize="18sp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="16dp"
-        android:textColor="@android:color/white" />
-
+        android:textSize="18sp" />
 </LinearLayout>

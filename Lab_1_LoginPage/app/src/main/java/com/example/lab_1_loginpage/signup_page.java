@@ -6,26 +6,27 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-
+import com.API.UserApi;
 import com.Abstract.BaseActivity;
+import com.Client.UnsafeOkHttpClient;
+
+import Data.User;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 public class signup_page extends BaseActivity {
     Button login;
     private EditText etUsername;
-    private EditText Email;
-    private EditText phoneNumber;
     private EditText etPassword;
     private Button btnSignUp;
-
     private final String REQUIRE = "Require";
+
+    private UserApi userApi;
 
     @Override
     protected void navigateTo(Class<?> targetActivity) {
@@ -41,10 +42,15 @@ public class signup_page extends BaseActivity {
         login = findViewById(R.id.login);
         etUsername = findViewById(R.id.Username_text);
         etPassword = findViewById(R.id.Password_text);
-        Email = findViewById(R.id.Email_text);
-        phoneNumber = findViewById(R.id.Phone_text);
         btnSignUp = findViewById(R.id.signupButton);
 
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("https://52.175.19.146/") // URL của API
+                .client(UnsafeOkHttpClient.getUnsafeOkHttpClient()) // Sử dụng OkHttpClient không an toàn
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        userApi = retrofit.create(UserApi.class);
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,14 +68,35 @@ public class signup_page extends BaseActivity {
     }
 
     private void signUp() {
-
         if (!checkInput()) {
             return;
         }
 
-        Toast.makeText(this, "Registration successful", Toast.LENGTH_SHORT).show();
-        navigateTo(login_page.class);
-        finish();
+        String username = etUsername.getText().toString();
+        String password = etPassword.getText().toString();
+
+        User user = new User(username, password);
+
+        // Gọi API với Retrofit
+        Call<Void> call = userApi.signUp(user);
+        call.enqueue(new Callback<Void>() {
+            @Override
+            public void onResponse(Call<Void> call, Response<Void> response) {
+                if (response.isSuccessful()) {
+                    Toast.makeText(signup_page.this, "Đăng ký thành công", Toast.LENGTH_SHORT).show();
+                    navigateTo(login_page.class);
+                    finish();
+                } else {
+                    Toast.makeText(signup_page.this, "Đăng ký không thành công", Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<Void> call, Throwable t) {
+                Toast.makeText(signup_page.this, "Lỗi kết nối", Toast.LENGTH_SHORT).show();
+                t.printStackTrace();
+            }
+        });
     }
 
     private void signInForm() {
@@ -88,17 +115,6 @@ public class signup_page extends BaseActivity {
             return false;
         }
 
-        if (TextUtils.isEmpty(phoneNumber.getText().toString())) {
-            phoneNumber.setError(REQUIRE);
-            return false;
-        }
-
-        if (!TextUtils.equals(etPassword.getText().toString(), Email.getText().toString())) {
-            Email.setError(REQUIRE);
-            return false;
-        }
-
         return true;
     }
-
 }

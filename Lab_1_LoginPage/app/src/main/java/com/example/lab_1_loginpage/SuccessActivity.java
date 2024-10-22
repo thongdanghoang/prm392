@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class SuccessActivity extends AppCompatActivity {
 
-    private static final int REDIRECT_DELAY = 3000; // Thời gian chờ 3 giây
+    private static final int REDIRECT_DELAY = 3000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +20,7 @@ public class SuccessActivity extends AppCompatActivity {
         TextView tvSuccessMessage = findViewById(R.id.tvSuccessMessage);
         Button btnContinue = findViewById(R.id.btnContinue);
 
-        // Thiết lập nút "Tiếp tục" để chuyển về main_screen
+
         btnContinue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -28,7 +28,6 @@ public class SuccessActivity extends AppCompatActivity {
             }
         });
 
-        // Tự động chuyển hướng sau 3 giây
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {

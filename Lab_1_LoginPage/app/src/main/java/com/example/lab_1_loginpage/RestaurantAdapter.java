@@ -19,10 +19,12 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.Re
 
     private Context context;
     private List<Table> restaurantList;
+    private String token; // Thêm biến token
 
-    public RestaurantAdapter(Context context, List<Table> restaurantList) {
+    public RestaurantAdapter(Context context, List<Table> restaurantList, String token) {
         this.context = context;
         this.restaurantList = restaurantList;
+        this.token = token; // Gán token
     }
 
     @NonNull
@@ -37,7 +39,6 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.Re
         Table table = restaurantList.get(position);
         holder.restaurantName.setText(table.getName());
         holder.restaurantAddress.setText(table.getAddress());
-        holder.restaurantHours.setText(table.getHours());
         holder.floorNumber.setText("Floor Number: " + table.getFloorNumber());
         holder.seatNumber.setText("Seats: " + table.getSeatNumber());
         holder.restaurantImage.setImageResource(table.getImageResourceId());
@@ -51,6 +52,7 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.Re
             intent.putExtra("TABLE_ADDRESS", table.getAddress());
             intent.putExtra("FLOOR_NUMBER", table.getFloorNumber());
             intent.putExtra("SEAT_NUMBER", table.getSeatNumber());
+            intent.putExtra("TOKEN", token); // Truyền token qua Intent
             context.startActivity(intent);
         });
     }
@@ -62,17 +64,17 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.Re
 
     public static class RestaurantViewHolder extends RecyclerView.ViewHolder {
 
-        TextView restaurantName, restaurantAddress, restaurantHours, floorNumber, seatNumber;
+        TextView restaurantName, restaurantAddress, floorNumber, seatNumber;
         ImageView restaurantImage;
 
         public RestaurantViewHolder(@NonNull View itemView) {
             super(itemView);
             restaurantName = itemView.findViewById(R.id.restaurant_name);
             restaurantAddress = itemView.findViewById(R.id.restaurant_address);
-            restaurantHours = itemView.findViewById(R.id.restaurant_hours);
             floorNumber = itemView.findViewById(R.id.floor_number);
             seatNumber = itemView.findViewById(R.id.seat_number);
             restaurantImage = itemView.findViewById(R.id.image_restaurant);
         }
     }
 }
+

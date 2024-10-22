@@ -42,7 +42,11 @@ dependencies {
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
     implementation("com.paypal.sdk:paypal-android-sdk:2.16.0")
-
+    implementation("com.google.android.gms:play-services-maps:18.1.0")
+    implementation(platform("com.google.firebase:firebase-bom:33.4.0"))
+    implementation("com.google.firebase:firebase-auth")
+    implementation("com.google.firebase:firebase-database")
+    implementation("com.google.firebase:firebase-firestore")
 
 
 }

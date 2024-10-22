@@ -6,6 +6,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -26,17 +27,32 @@ public class MenuActivity extends AppCompatActivity {
     private String tableAddress;
     private int floorNumber;
     private int seatNumber;
+    private String token;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
+        // Thiết lập Toolbar
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        // Hiển thị nút quay lại trong Toolbar
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_arrow_back); // Đặt icon mũi tên tùy chỉnh
+        }
+
+        // Xử lý khi nhấn nút quay lại
+        toolbar.setNavigationOnClickListener(v -> onBackPressed());
+
         // Nhận thông tin bàn từ Intent
         tableName = getIntent().getStringExtra("TABLE_NAME");
         tableAddress = getIntent().getStringExtra("TABLE_ADDRESS");
         floorNumber = getIntent().getIntExtra("FLOOR_NUMBER", 0);
         seatNumber = getIntent().getIntExtra("SEAT_NUMBER", 0);
+        token = getIntent().getStringExtra("TOKEN");
 
         // Initialize RecyclerView for the food menu
         foodRecyclerView = findViewById(R.id.recycler_food_menu);
@@ -65,6 +81,7 @@ public class MenuActivity extends AppCompatActivity {
                 intent.putExtra("TABLE_ADDRESS", tableAddress);
                 intent.putExtra("FLOOR_NUMBER", floorNumber);
                 intent.putExtra("SEAT_NUMBER", seatNumber);
+                intent.putExtra("TOKEN", token);
                 startActivity(intent);
             }
         });

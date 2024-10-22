@@ -5,26 +5,36 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+    <!-- Tên người đặt hàng -->
     <TextView
-        android:id="@+id/order_name"
+        android:id="@+id/user_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Order Name"
-        android:textSize="18sp"
-        android:textStyle="bold"/>
+        android:text="Name"
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
+    <!-- Tổng giá đơn hàng -->
     <TextView
-        android:id="@+id/order_price"
+        android:id="@+id/total_price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="$0.00"
-        android:textSize="16sp"/>
+        android:text="Total: $0.00"
+        android:textSize="14sp" />
 
+    <!-- Trạng thái thanh toán -->
     <TextView
-        android:id="@+id/order_status"
+        android:id="@+id/payment_status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Status: Pending"
-        android:textSize="14sp"
-        android:textColor="@android:color/holo_red_dark"/>
+        android:text="Status: Đã hoàn thành"
+        android:textSize="14sp" />
+
+    <!-- Thời gian đặt hàng -->
+    <TextView
+        android:id="@+id/order_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Time: 00:00"
+        android:textSize="14sp" />
 </LinearLayout>

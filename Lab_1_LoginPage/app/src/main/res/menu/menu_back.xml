@@ -1,0 +1,9 @@
+<!-- res/menu/menu_back.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_back"
+        android:title="Quay lại"
+        android:icon="@android:drawable/ic_menu_revert"
+        app:showAsAction="always" />
+</menu>

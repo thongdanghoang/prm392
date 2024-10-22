@@ -18,50 +18,25 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/Email_text"
-        android:layout_width="328dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="40dp"
-        android:ems="10"
-        android:hint="Email"
-        android:inputType="textEmailAddress"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.481"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Username_text" />
-
-    <EditText
-        android:id="@+id/Phone_text"
-        android:layout_width="328dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="40dp"
-        android:ems="10"
-        android:hint="Phone Number"
-        android:inputType="phone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.481"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Email_text" />
-
-    <EditText
         android:id="@+id/Password_text"
         android:layout_width="328dp"
         android:layout_height="50dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="28dp"
         android:ems="10"
         android:hint="Password"
-        android:inputType="numberPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.481"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Phone_text" />
+        android:inputType="textPassword"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.433"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/Username_text" />
+
 
     <EditText
         android:id="@+id/Username_text"
         android:layout_width="328dp"
         android:layout_height="50dp"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="108dp"
         android:ems="10"
         android:hint="Username"
         android:inputType="text"

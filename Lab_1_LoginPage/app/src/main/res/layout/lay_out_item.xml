@@ -47,14 +47,6 @@
                     android:textSize="14sp"
                     android:layout_marginTop="4dp" />
 
-                <TextView
-                    android:id="@+id/restaurant_hours"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="11:30 AM - 11:00 PM"
-                    android:textSize="14sp"
-                    android:layout_marginTop="4dp" />
-
                 <!-- Floor Number -->
                 <TextView
                     android:id="@+id/floor_number"

@@ -3,4 +3,7 @@
     <domain-config cleartextTrafficPermitted="true">
         <domain includeSubdomains="true">sandbox.paypal.com</domain>
     </domain-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">52.175.19.146</domain>
+    </domain-config>
 </network-security-config>
