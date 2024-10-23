@@ -150,8 +150,18 @@ public class CheckoutActivity extends AppCompatActivity {
         }
 
         // Lưu đơn hàng vào cơ sở dữ liệu với tất cả các thông tin
-        Order order = new Order(orderId, userId, userName, phoneNumber, tableNumber, floorNumber,
-                itemList, time, totalPrice, "Đã hoàn thành", getCurrentTime());
+        Order order = new Order(
+                orderId,
+                userId,
+                userName,
+                phoneNumber,
+                tableNumber,
+                floorNumber,
+                itemList,
+                time,
+                totalPrice,
+                "Đã hoàn thành",
+                getCurrentTime());
         databaseHelper.addOrder(order);
 
         Toast.makeText(this, "Order saved successfully", Toast.LENGTH_SHORT).show();

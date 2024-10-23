@@ -1,6 +1,7 @@
 package com.example.lab_1_loginpage;
 
 import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -31,7 +32,7 @@ public class OrderListActivity extends AppCompatActivity {
         orderList.add(new Order("Order 3", 39.99, "In Progress"));
 
         // Set adapter cho RecyclerView
-        orderAdapter = new OrderAdapter(orderList);
+        orderAdapter = new OrderAdapter(this, orderList);
         orderRecyclerView.setAdapter(orderAdapter);
     }
 }
