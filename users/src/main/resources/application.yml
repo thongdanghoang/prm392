@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:postgresql://${POSTGRES_HOST}:${POSTGRES_PORT}/${POSTGRES_DB}
-    username: ${POSTGRES_USER}
-    password: ${POSTGRES_PASSWORD}
+    url: jdbc:postgresql://postgres-db/prm392
+    username: postgres
+    password: postgres
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
@@ -17,4 +17,4 @@ spring:
   application:
     name: users
 jwt:
-  secret: ${JWT_SECRET}
+  secret: 5367566B59703373367639792F423F4528482B4D6251655468576D5A71347437

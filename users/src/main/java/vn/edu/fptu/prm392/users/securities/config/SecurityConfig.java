@@ -16,7 +16,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 import vn.edu.fptu.prm392.users.securities.jwt.JwtAuthFilter;
 
 @Configuration
-@EnableWebSecurity(debug = true)
+@EnableWebSecurity(debug = false)
 @EnableMethodSecurity
 @RequiredArgsConstructor
 @Slf4j
