@@ -10,9 +10,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
 
 import java.security.Key;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 import java.util.function.Function;
 
 @Component
@@ -22,8 +20,10 @@ public class JwtService {
     private String secret;
 
     // Generate token with given user name
-    public String generateToken(String userName) {
+    public String generateToken(String userName, Set<String> roles, UUID userID) {
         Map<String, Object> claims = new HashMap<>();
+        claims.put("roles", roles);
+        claims.put("id", userID.toString());
         return createToken(claims, userName);
     }
 

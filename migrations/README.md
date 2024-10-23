@@ -3,7 +3,7 @@
 ### How to run the migrations shortcut
 
 ```shell script
-POSTGRES_HOST=localhost POSTGRES_PORT=5432 POSTGRES_DB=prm392 POSTGRES_USER=postgres POSTGRES_PASSWORD=postgres ./mvnw spring-boot:run 
+POSTGRES_HOST=localhost POSTGRES_PORT=9082 POSTGRES_DB=prm392 POSTGRES_USER=postgres POSTGRES_PASSWORD=postgres ./mvnw spring-boot:run 
 ```
 
 ## Overview

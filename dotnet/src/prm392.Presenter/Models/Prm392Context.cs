@@ -41,11 +41,11 @@ public partial class Prm392Context : DbContext
     {
         modelBuilder.Entity<Authority>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("authorities_pkey");
+            entity.HasKey(e => e.Id).HasName("authorities_pk");
 
-            entity.ToTable("authorities");
+            entity.ToTable("authorities", "users");
 
-            entity.HasIndex(e => e.Role, "authorities_role_key").IsUnique();
+            entity.HasIndex(e => e.Role, "authorities_role_unique").IsUnique();
 
             entity.Property(e => e.Id)
                 .ValueGeneratedNever()
@@ -57,11 +57,11 @@ public partial class Prm392Context : DbContext
 
         modelBuilder.Entity<MenuItem>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("menu_items_pkey");
+            entity.HasKey(e => e.Id).HasName("menu_items_pk");
 
-            entity.ToTable("menu_items");
+            entity.ToTable("menu_items", "restaurants");
 
-            entity.HasIndex(e => e.Name, "menu_items_name_key").IsUnique();
+            entity.HasIndex(e => e.Name, "menu_items_name_unique").IsUnique();
 
             entity.Property(e => e.Id)
                 .ValueGeneratedNever()
@@ -81,9 +81,9 @@ public partial class Prm392Context : DbContext
 
         modelBuilder.Entity<Notification>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("notifications_pkey");
+            entity.HasKey(e => e.Id).HasName("notifications_pk");
 
-            entity.ToTable("notifications");
+            entity.ToTable("notifications", "notifications");
 
             entity.Property(e => e.Id)
                 .ValueGeneratedNever()
@@ -94,14 +94,14 @@ public partial class Prm392Context : DbContext
             entity.HasOne(d => d.User).WithMany(p => p.Notifications)
                 .HasForeignKey(d => d.UserId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("notifications_user_id_fkey");
+                .HasConstraintName("notifications_user_id_fk");
         });
 
         modelBuilder.Entity<Reservation>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("reservations_pkey");
+            entity.HasKey(e => e.Id).HasName("reservations_pk");
 
-            entity.ToTable("reservations");
+            entity.ToTable("reservations", "restaurants");
 
             entity.Property(e => e.Id)
                 .ValueGeneratedNever()
@@ -136,21 +136,21 @@ public partial class Prm392Context : DbContext
             entity.HasOne(d => d.Seat).WithMany(p => p.Reservations)
                 .HasForeignKey(d => d.SeatId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("reservations_seat_id_fkey");
+                .HasConstraintName("reservations_seat_id_fk");
 
             entity.HasOne(d => d.User).WithMany(p => p.Reservations)
                 .HasForeignKey(d => d.UserId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("reservations_user_id_fkey");
+                .HasConstraintName("reservations_user_id_fk");
         });
 
         modelBuilder.Entity<ReservationMenuItem>(entity =>
         {
-            entity.HasKey(e => new { e.ReservationId, e.MenuItemId }).HasName("reservation_menu_items_pkey");
+            entity.HasKey(e => new { e.ReservationId, e.MenuItemId }).HasName("reservation_menu_items_pk");
 
-            entity.ToTable("reservation_menu_items");
+            entity.ToTable("reservation_menu_items", "restaurants");
 
-            entity.HasIndex(e => e.ReservationId, "reservation_menu_items_reservation_id_key").IsUnique();
+            entity.HasIndex(e => e.ReservationId, "reservation_menu_items_reservation_id_fk").IsUnique();
 
             entity.Property(e => e.ReservationId).HasColumnName("reservation_id");
             entity.Property(e => e.MenuItemId).HasColumnName("menu_item_id");
@@ -161,19 +161,19 @@ public partial class Prm392Context : DbContext
             entity.HasOne(d => d.MenuItem).WithMany(p => p.ReservationMenuItems)
                 .HasForeignKey(d => d.MenuItemId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("reservation_menu_items_menu_item_id_fkey");
+                .HasConstraintName("reservation_menu_items_menu_item_id_fk");
 
             entity.HasOne(d => d.Reservation).WithOne(p => p.ReservationMenuItem)
                 .HasForeignKey<ReservationMenuItem>(d => d.ReservationId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("reservation_menu_items_reservation_id_fkey");
+                .HasConstraintName("reservation_menu_items_reservation_id_fk");
         });
 
         modelBuilder.Entity<Seat>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("seats_pkey");
+            entity.HasKey(e => e.Id).HasName("seats_pk");
 
-            entity.ToTable("seats");
+            entity.ToTable("seats", "restaurants");
 
             entity.Property(e => e.Id)
                 .ValueGeneratedNever()
@@ -195,9 +195,9 @@ public partial class Prm392Context : DbContext
 
         modelBuilder.Entity<Transaction>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("transactions_pkey");
+            entity.HasKey(e => e.Id).HasName("transactions_pk");
 
-            entity.ToTable("transactions");
+            entity.ToTable("transactions", "transactions");
 
             entity.Property(e => e.Id)
                 .ValueGeneratedNever()
@@ -229,15 +229,15 @@ public partial class Prm392Context : DbContext
 
         modelBuilder.Entity<User>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("users_pkey");
+            entity.HasKey(e => e.Id).HasName("users_pk");
 
-            entity.ToTable("users");
+            entity.ToTable("users", "users");
 
-            entity.HasIndex(e => e.Email, "users_email_key").IsUnique();
+            entity.HasIndex(e => e.Email, "users_email_unique").IsUnique();
 
-            entity.HasIndex(e => e.Phone, "users_phone_key").IsUnique();
+            entity.HasIndex(e => e.Phone, "users_phone_unique").IsUnique();
 
-            entity.HasIndex(e => e.Username, "users_username_key").IsUnique();
+            entity.HasIndex(e => e.Username, "users_username_unique").IsUnique();
 
             entity.Property(e => e.Id)
                 .ValueGeneratedNever()
@@ -281,9 +281,9 @@ public partial class Prm392Context : DbContext
 
         modelBuilder.Entity<UserNotificationPreference>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("user_notification_preferences_pkey");
+            entity.HasKey(e => e.Id).HasName("user_notification_preferences_pk");
 
-            entity.ToTable("user_notification_preferences");
+            entity.ToTable("user_notification_preferences", "notifications");
 
             entity.Property(e => e.Id)
                 .ValueGeneratedNever()
@@ -301,14 +301,14 @@ public partial class Prm392Context : DbContext
             entity.HasOne(d => d.User).WithMany(p => p.UserNotificationPreferences)
                 .HasForeignKey(d => d.UserId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("user_notification_preferences_user_id_fkey");
+                .HasConstraintName("user_notification_preferences_user_id_fk");
         });
 
         modelBuilder.Entity<UsersAuthority>(entity =>
         {
-            entity.HasKey(e => new { e.UserId, e.AuthorityId }).HasName("users_authorities_pkey");
+            entity.HasKey(e => new { e.UserId, e.AuthorityId }).HasName("users_authorities_pk");
 
-            entity.ToTable("users_authorities");
+            entity.ToTable("users_authorities", "users");
 
             entity.HasIndex(e => e.UserId, "users_authorities_user_id_key").IsUnique();
 
@@ -318,12 +318,12 @@ public partial class Prm392Context : DbContext
             entity.HasOne(d => d.Authority).WithMany(p => p.UsersAuthorities)
                 .HasForeignKey(d => d.AuthorityId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("users_authorities_authority_id_fkey");
+                .HasConstraintName("users_authorities_authority_id_fk");
 
             entity.HasOne(d => d.User).WithOne(p => p.UsersAuthority)
                 .HasForeignKey<UsersAuthority>(d => d.UserId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("users_authorities_user_id_fkey");
+                .HasConstraintName("users_authorities_user_id_fk");
         });
 
         OnModelCreatingPartial(modelBuilder);
