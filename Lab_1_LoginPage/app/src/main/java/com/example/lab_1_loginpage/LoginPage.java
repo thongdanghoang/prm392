@@ -24,12 +24,13 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class login_page extends BaseActivity {
+public class LoginPage extends BaseActivity {
     private static final String TAG = "LoginPage";
-    private Button login, signupButton;
+    private Button login;
+    private Button signupButton;
     private EditText etUsername;
     private EditText etPassword;
-    private final String REQUIRE = "Require";
+    private static final String REQUIRE = "Require";
 
     private UserApi userApi;
     private String userId; // Biến để lưu ID người dùng
@@ -98,7 +99,7 @@ public class login_page extends BaseActivity {
                         Log.d(TAG, "User ID: " + userId);
 
                         // Điều hướng đến main_screen với userId và token
-                        Intent intent = new Intent(login_page.this, main_screen.class);
+                        Intent intent = new Intent(LoginPage.this, MainScreen.class);
                         intent.putExtra("USER_ID", userId);
                         intent.putExtra("TOKEN", token);
                         startActivity(intent);
@@ -106,18 +107,18 @@ public class login_page extends BaseActivity {
 
                     } catch (Exception e) {
                         e.printStackTrace();
-                        Toast.makeText(login_page.this, "Lỗi xử lý phản hồi", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoginPage.this, "Lỗi xử lý phản hồi", Toast.LENGTH_SHORT).show();
                     }
                 } else {
                     Log.d(TAG, "Đăng nhập không thành công: " + response.code());
-                    Toast.makeText(login_page.this, "Đăng nhập không thành công", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginPage.this, "Đăng nhập không thành công", Toast.LENGTH_SHORT).show();
                 }
             }
 
             @Override
             public void onFailure(Call<ResponseBody> call, Throwable t) {
                 Log.e(TAG, "Lỗi kết nối: ", t);
-                Toast.makeText(login_page.this, "Lỗi kết nối", Toast.LENGTH_SHORT).show();
+                Toast.makeText(LoginPage.this, "Lỗi kết nối", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -142,10 +143,10 @@ public class login_page extends BaseActivity {
 
             // Phân tích JSON từ payload để lấy userId
             JSONObject jsonObject = new JSONObject(body);
-            String userId = jsonObject.getString("id");
-            Log.d(TAG, "Extracted User ID: " + userId);
+            String extractedUserId = jsonObject.getString("id");
+            Log.d(TAG, "Extracted User ID: " + extractedUserId);
 
-            return userId; // Trả về ID người dùng
+            return extractedUserId; // Trả về ID người dùng
         } catch (Exception e) {
             Log.e(TAG, "Failed to parse token: " + e.getMessage());
             e.printStackTrace();
@@ -155,13 +156,13 @@ public class login_page extends BaseActivity {
 
 
     private void signUpForm() {
-        navigateTo(signup_page.class);
+        navigateTo(RegisterPage.class);
         finish();
     }
 
     @Override
     protected void navigateTo(Class<?> targetActivity) {
-        Intent intent = new Intent(login_page.this, targetActivity);
+        Intent intent = new Intent(LoginPage.this, targetActivity);
         startActivity(intent);
     }
 }

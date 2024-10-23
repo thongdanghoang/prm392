@@ -19,7 +19,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class signup_page extends BaseActivity {
+public class RegisterPage extends BaseActivity {
     Button login;
     private EditText etUsername;
     private EditText etPassword;
@@ -30,7 +30,7 @@ public class signup_page extends BaseActivity {
 
     @Override
     protected void navigateTo(Class<?> targetActivity) {
-        Intent intent = new Intent(signup_page.this, targetActivity);
+        Intent intent = new Intent(RegisterPage.this, targetActivity);
         startActivity(intent);
     }
 
@@ -83,24 +83,24 @@ public class signup_page extends BaseActivity {
             @Override
             public void onResponse(Call<Void> call, Response<Void> response) {
                 if (response.isSuccessful()) {
-                    Toast.makeText(signup_page.this, "Đăng ký thành công", Toast.LENGTH_SHORT).show();
-                    navigateTo(login_page.class);
+                    Toast.makeText(RegisterPage.this, "Đăng ký thành công", Toast.LENGTH_SHORT).show();
+                    navigateTo(LoginPage.class);
                     finish();
                 } else {
-                    Toast.makeText(signup_page.this, "Đăng ký không thành công", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegisterPage.this, "Đăng ký không thành công", Toast.LENGTH_SHORT).show();
                 }
             }
 
             @Override
             public void onFailure(Call<Void> call, Throwable t) {
-                Toast.makeText(signup_page.this, "Lỗi kết nối", Toast.LENGTH_SHORT).show();
+                Toast.makeText(RegisterPage.this, "Lỗi kết nối", Toast.LENGTH_SHORT).show();
                 t.printStackTrace();
             }
         });
     }
 
     private void signInForm() {
-        navigateTo(login_page.class);
+        navigateTo(LoginPage.class);
         finish();
     }
 

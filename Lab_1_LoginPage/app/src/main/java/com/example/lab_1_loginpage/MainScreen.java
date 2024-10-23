@@ -1,6 +1,5 @@
 package com.example.lab_1_loginpage;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -22,7 +21,6 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.google.firebase.FirebaseApp;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -34,7 +32,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class main_screen extends BaseActivity implements OnMapReadyCallback {
+public class MainScreen extends BaseActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
     private RecyclerView restaurantRecyclerView;
@@ -88,19 +86,17 @@ public class main_screen extends BaseActivity implements OnMapReadyCallback {
                 if (response.isSuccessful() && response.body() != null) {
                     restaurantList = response.body();
                 } else {
-//                    Toast.makeText(main_screen.this, "Failed to load data, using dummy data", Toast.LENGTH_SHORT).show();
                     restaurantList = createDummyTableList();
                 }
-                adapter = new RestaurantAdapter(main_screen.this, restaurantList, savedToken); // Truyền token vào adapter
+                adapter = new RestaurantAdapter(MainScreen.this, restaurantList, savedToken); // Truyền token vào adapter
                 restaurantRecyclerView.setAdapter(adapter);
             }
 
             @Override
             public void onFailure(Call<List<Table>> call, Throwable t) {
                 Log.e("API_ERROR", t.getMessage());
-//                Toast.makeText(main_screen.this, "Error: " + t.getMessage() + ", using dummy data", Toast.LENGTH_SHORT).show();
                 restaurantList = createDummyTableList();
-                adapter = new RestaurantAdapter(main_screen.this, restaurantList, savedToken); // Truyền token vào adapter
+                adapter = new RestaurantAdapter(MainScreen.this, restaurantList, savedToken); // Truyền token vào adapter
                 restaurantRecyclerView.setAdapter(adapter);
             }
         });
@@ -109,19 +105,19 @@ public class main_screen extends BaseActivity implements OnMapReadyCallback {
         bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
             if (item.getItemId() == R.id.navigation_home) {
-                Toast.makeText(main_screen.this, "Home", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainScreen.this, "Home", Toast.LENGTH_SHORT).show();
                 return true;
             } else if (item.getItemId() == R.id.navigation_order) {
                 // Thêm log để kiểm tra userId và token trước khi truyền
 
                 // Chuyển sang OrderHistoryActivity với userId và token
-                Intent intent = new Intent(main_screen.this, OrderHistoryActivity.class);
+                Intent intent = new Intent(MainScreen.this, OrderHistoryActivity.class);
                 intent.putExtra("USER_ID", userId); // Truyền userId qua Intent
                 intent.putExtra("TOKEN", savedToken); // Truyền token qua Intent
                 startActivity(intent);
                 return true;
             } else if (item.getItemId() == R.id.navigation_chat) {
-                Intent intent = new Intent(main_screen.this, ChatActivity.class);
+                Intent intent = new Intent(MainScreen.this, ChatActivity.class);
                 intent.putExtra("TOKEN", savedToken);
                 startActivity(intent);
                 return true;
@@ -148,7 +144,7 @@ public class main_screen extends BaseActivity implements OnMapReadyCallback {
             Toast.makeText(this, "Đăng xuất thành công", Toast.LENGTH_SHORT).show();
 
             // Chuyển về màn hình đăng nhập
-            Intent intent = new Intent(this, login_page.class);
+            Intent intent = new Intent(this, LoginPage.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK); // Xóa stack hiện tại
             startActivity(intent);
             finish(); // Đóng activity hiện tại
@@ -205,7 +201,7 @@ public class main_screen extends BaseActivity implements OnMapReadyCallback {
 
     @Override
     protected void navigateTo(Class<?> targetActivity) {
-        Intent intent = new Intent(main_screen.this, targetActivity);
+        Intent intent = new Intent(MainScreen.this, targetActivity);
         startActivity(intent);
     }
 

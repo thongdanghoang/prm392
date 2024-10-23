@@ -37,7 +37,7 @@ public class SuccessActivity extends AppCompatActivity {
     }
 
     private void redirectToMainScreen() {
-        Intent intent = new Intent(SuccessActivity.this, main_screen.class);
+        Intent intent = new Intent(SuccessActivity.this, MainScreen.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
         finish();

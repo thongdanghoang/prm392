@@ -3,7 +3,6 @@ package com.example.lab_1_loginpage;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Base64;
-import android.util.Log;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -66,7 +65,7 @@ public class OrderHistoryActivity extends AppCompatActivity {
         bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
             if (item.getItemId() == R.id.navigation_home) {
                 // Quay lại màn hình chính
-                Intent intent = new Intent(OrderHistoryActivity.this, main_screen.class);
+                Intent intent = new Intent(OrderHistoryActivity.this, MainScreen.class);
                 intent.putExtra("TOKEN", token);
                 startActivity(intent);
                 return true;

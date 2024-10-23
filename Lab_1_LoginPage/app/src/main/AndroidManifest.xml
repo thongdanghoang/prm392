@@ -25,7 +25,7 @@
             android:name=".ChatActivity"
             android:exported="false"/>
         <activity
-            android:name=".signup_page"
+            android:name=".RegisterPage"
             android:exported="false"/>
         <activity
             android:name=".MenuActivity"
@@ -52,7 +52,7 @@
 
         <!-- Đặt login_page là màn hình khởi chạy -->
         <activity
-            android:name=".login_page"
+            android:name=".LoginPage"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -62,7 +62,7 @@
 
         <!-- main_screen không còn là activity khởi chạy -->
         <activity
-            android:name=".main_screen"
+            android:name=".MainScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
